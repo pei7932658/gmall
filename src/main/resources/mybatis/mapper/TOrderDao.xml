@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.gmall.dao.TOrderDao">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.gmall.entity.TOrder">
+        <id column="id" property="id" />
+        <result column="goods_id" property="goodsId" />
+        <result column="order_num" property="orderNum" />
+        <result column="order_price" property="orderPrice" />
+        <result column="order_count" property="orderCount" />
+        <result column="order_goods_group_id" property="orderGoodsGroupId" />
+        <result column="t_user_id" property="tUserId" />
+        <result column="pay_type" property="payType" />
+        <result column="t_time" property="tTime" />
+        <result column="t_group_time" property="tGroupTime" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, goods_id, order_num, order_price, order_count, order_goods_group_id, t_user_id, pay_type, t_time, t_group_time
+    </sql>
+
+</mapper>

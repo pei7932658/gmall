@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.gmall.dao.TIndexBannerDao">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.gmall.entity.TIndexBanner">
+        <id column="id" property="id" />
+        <result column="pic_url1" property="picUrl1" />
+        <result column="pic_url2" property="picUrl2" />
+        <result column="pic_url3" property="picUrl3" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, pic_url1, pic_url2, pic_url3
+    </sql>
+
+</mapper>
